@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="main.css">
+
+        <title>fit-body</title>
+    </head>
+    <!-- cabeçalho do site -->
+    <body>
+        <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+            <div class="container container_flex">
+                <h1 class="navbar-brand m-0"><span>FIT</span>-body</h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-naevgacao">
+                    <span class="navbar navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-naevgacao">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold">
+                            <a href="#sobre" class="nav-link active">
+                                <i class="bi bi-house-door me-1"></i>
+                                Sobre a Academia
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#conteudo" class="nav-link">
+                                <i class="bi bi-card-text me-1"></i>
+                                Conteúdo
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#modalidades" class="nav-link">
+                                <i class="bi bi-card-text me-1"></i>
+                                modalidades
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#suplementos" class="nav-link">
+                                <i class="bi bi-capsule"></i>
+                                suplementos
+                            </a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="btn-group">
+                                    <button class="btn btn-primary botao_matricula" data-bs-toggle="modal" data-bs-target="#matricular">
+                                        <i class="bi bi-clipboard2-check"></i>
+                                        matricule-se
+                                    </button>
+                                    <button data-bs-toggle="dropdown" class="btn btn-primary dropdown-toggle"></button>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li>
+                                            <a class="dropdown-item butao_sec" href="#contato">
+                                                <i class="bi bi-telephone me-1"></i>
+                                                contato
+                                            </a>
+                                        </li>
+                                        <li data-bs-toggle="modal" data-bs-target="#perguntas_freq">
+                                            <a class="dropdown-item butao_sec" href="#">
+                                                <i class="bi bi-chat-right-text"></i>
+                                                perguntas freq.
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                </nav>
+        </header>
+
+        <!-- sobre o site  -->
+
+        <section id="sobre"  data-bs-target="#cabecalho" data-bs-smooth-scroll="true"> 
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="midia/academia.png" alt="imagem da academia" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title titulos">Sobre a <span class="text-colored">Academia</span></h2>
+                            <p>
+                                Em nossa academia prezamos pelo conforto e bem estar de nossos frequentadores,
+                                para que todos os tipos de pessoas.E que todos tenham a chance de conhecer 
+                                nossa maravilhosa academia e ter um bom treino com nossos professores a disposição.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- conteudo -->
+
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+            <section id="conteudo" >
+                <div class="container">
+                    <h2 class="text-center titulos"> Nosso <span>conteúdo</span> </h2>
+                    <ul class="container_flex lista_conteudo">
+                        <li>
+                            <img class="rounded" src="midia/maquinas_acad.png" alt="Maquinas de academia"/>
+                            <h3>Máquinas</h3>
+                            <p>
+                                possuimos máquinas de todos os tipos para todos os exercicios de sua preferência.
+                            </p>
+                        </li>
+                        <li>
+                            <img class="rounded" src="midia/halteres.png" alt="Halteres"/>
+                            <h3>Halteres</h3>
+                            <p>
+                                possuimos halteres de todos os tamanhos para você ultilizar.
+                            </p>
+                        </li>
+                        <li>
+                            <img class="rounded" src="midia/pesos.png" alt="pesos"/>
+                            <h3>pesos</h3>
+                            <p>
+                                possuimos pesos de todos os tamahos para que todos poderem fazer exercicios.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <!-- modalidades -->
+
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+            <section id="modalidades">
+                <div class="container">
+                    <h2 class="text-center titulos">Nossas <span>modalidades</span> </h2>
+                    <ul class="container_flex lista_conteudo">
+                        <li>
+                            <img class="rounded" src="midia/pilatesv3.png" alt="mulher fazendo pilates"/>
+                            <h3>Pilates</h3>
+                            <p>
+                                aulas de 40 minutos todas terças e quintas as 18:00 horas.
+                            </p>
+                        </li>
+                        <li>
+                            <img class="rounded" src="midia/danca.png" alt="aula de dança"/>
+                            <h3>Fit-Dance</h3>
+                            <p>
+                                aulas de 50 minutos todas segundas e sextas as 18:00 horas.
+                            </p>
+                        </li>
+                        <li>
+                            <img class="rounded" src="midia/boxe_2.png" alt="aula de boxe"/>
+                            <h3>Muay thai</h3>
+                            <p>
+                                aulas de 50 minutos todas quartas e sextas as 19:00 horas.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- suplementos -->
+
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+            <section id="suplementos">
+                <div class="container">
+                    <h2 class="text-center titulos">Nossos <span>Suplementos</span> </h2>
+                    <ul class="lista_conteudo lista_sup container_flex">
+                        <li>
+                            <img src="midia/creatina.png" alt="creatina"/>
+                            <h3>Creatina - Black Skull</h3>
+                            <p>
+                                utilizado para quem quer render mais no treino.
+                            </p>
+                            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#creatina">tenho interrese</button>
+                        </li>
+                        <li>
+                            <img src="midia/whey2.png" alt="whey protein"/>
+                            <h3>whey - Black Skull</h3>
+                            <p>
+                                whey protein é utilizado para conseguir mais proteinas. 
+                            </p>
+                            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#whey">tenho interrese</button>
+                        </li>
+                        <li>
+                            <img src="midia/pre_treino.png" alt="pré-treino"/>
+                            <h3>pré-treino - Black Skull</h3>
+                            <p>
+                                usado para conseguir mais energia durante o treino.
+                            </p>
+                            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#pre_treino">tenho interrese</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- modais dos suplementos -->
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="container">
+                        <div class="modal" id="creatina" data-bs-backdrop="static">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5>item interessado: Creatina</h5>
+                                        <button data-bs-dismiss="modal" type="button" class="btn-close" ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form">
+                                            <label class="form-label" for="nome_modal1">Nome</label>
+                                            <input class="form-control" type="text" id="nome_modal1" name="nome_modal1" placeholder="seu nome">
+                                            <label class="form-label" for="tel_modal1">Telefone</label>
+                                            <input class="form-control" type="tel" id="tel_modal1" name="tel_modal1">
+                                            <label class="form-label" for="endereco">endereço</label>
+                                            <input class="form-control" type="text" id="endereco1" placeholder="endereço">
+                                            <button class="btn btn-success" type="button" data-bs-dismiss="modal" id="modal_b_1">Enviar</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h5>preço R$ 79,90</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="modal" id="whey" data-bs-backdrop="static">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5>item interessado: whey</h5>
+                                        <button data-bs-dismiss="modal" type="submit" class="btn-close" ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form">
+                                            <label class="form-label" for="nome_modal2">Nome</label>
+                                            <input class="form-control" type="text" id="nome_modal2" name="nome_modal2" placeholder="seu nome">
+                                            <label class="form-label" for="tel_modal2">Telefone</label>
+                                            <input class="form-control" type="tel" id="tel_modal2" name="tel_modal2">
+                                            <label class="form-label" for="endereco">endereço</label>
+                                            <input class="form-control" type="text" id="endereco2"  placeholder="endereço">
+                                            <button class="btn btn-success" type="button" data-bs-dismiss="modal" id="modal_b_2">Enviar</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h5>preço: R$ 64,99</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="container">
+                        <div class="modal" id="pre_treino" data-bs-backdrop="static">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5>item interessado: pré-treino</h5>
+                                        <button data-bs-dismiss="modal" type="button" class="btn-close" ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form">
+                                            <label class="form-label" for="nome_modal3">Nome</label>
+                                            <input class="form-control" type="text" id="nome_modal3" name="nome_modal3" placeholder="seu nome">
+                                            <label class="form-label" for="tel_modal3">Numero</label>
+                                            <input class="form-control" type="tel" id="tel_modal3" name="tel_modal3">
+                                            <label class="form-label" for="endereco">endereço</label>
+                                            <input class="form-control" type="text" id="endereco3"  placeholder="endereço">
+                                            <button class="btn btn-success" type="button" data-bs-dismiss="modal" id="modal_b_3">Enviar</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h5>preço: R$ 79,20</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- formulario de matricula -->
+
+            <section id="matricula">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="container">
+                            <div class="modal" id="matricular" data-bs-backdrop="static">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>formulario de matricula</h5>
+                                            <button data-bs-dismiss="modal" type="button" class="btn-close" ></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="form">
+                                                <label class="form-label" for="nome1">Nome Completo:</label>
+                                                <input class="form-control" type="text" name="nome1" id="nome1" placeholder="seu nome">
+                                                <label class="form-label" for="telefone1">Telefone:</label>
+                                                <input class="form-control" type="tel" name="telefone1" id="telefone1" placeholder="seu numero">
+                                                <label class="form-label" for="email1">E-mail:</label>
+                                                <input class="form-control" type="email1" name="email1" id="email1" placeholder="seu e-mail">
+                                                <label class="form-label">Escolha uma de nossas unidades:</label>
+                                                <select class="form-select">
+                                                    <option selected>Viamão </option>
+                                                    <option>Gravataí </option>
+                                                    <option>Canoas</option>
+                                                    <option>Alvorada</option>
+                                                    <option>Pelotas</option>
+                                                </select>
+                                                <div class="modal-footer">
+                                                <button class="btn btn-success" id="submit_button1"  type="button" data-bs-dismiss="modal">Enviar</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- formulario de contato e divulgação -->
+
+            <section id="contato">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="titulos">Entre em <span>contato:</span></h3>
+                            <form id="form2">
+                                <label class="form-label" for="nome2">Nome:</label>
+                                <input class="form-control" type="text" name="nome2" id="nome2" placeholder="seu nome">
+                                <label class="form-label" for="numero">Telefone:</label>
+                                <input class="form-control" type="tel" name="telefone2" id="telefone2" placeholder="seu numero">
+                                <label class="form-label" for="email2">E-mail:</label>
+                                <input class="form-control" type="email" name="email2" id="email2" placeholder="seu e-mail">
+                                <label class="form-label" for="mensagem">sua mensagem:</label>
+                                <textarea class="form-control" name="mensagem" id="mensagem" placeholder="sua mensagem"></textarea>
+                                <button class="btn btn-success" id="submit_button2" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <h3 class="titulos">Nos <span>acompanhe:</span></h3>
+                                    <ul class="social-links">
+                                        <li>
+                                            <a href="#" title="Siga-nos no Instagram">
+                                                <img src="midia/contato/instagram.png" alt="Logo do Instagram"/>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" title="Siga-nos no Facebook">
+                                                <img src="midia/contato/facebook.png" alt="Logo do Facebook"/>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <h4>patrocinador(a):</h4>
+                                    <h3>BlackSkull</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- perguntas e respostas -->
+
+            <section id="perguntas">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="container">
+                            <div class="modal" id="perguntas_freq" data-bs-backdrop="static">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5>perguntas Frequentes</h5>
+                                            <button data-bs-dismiss="modal" type="button" class="btn-close"><span></span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="accordion">
+                                                <div class="accordion-items">
+                                                    <div class="accordion-header">
+                                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">ABRE AOS FERIADOS?</button>
+                                                    </div>
+                                                    <div id="resposta1" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <p>As academias abrem aos feriados das 09h às 15h.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-items">
+                                                    <div class="accordion-header">
+                                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">ABRE AOS FINAIS DE SEMANA?</button>
+                                                    </div>
+                                                    <div id="resposta2" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <p>Voltamos a abrir aos finais de semana, sendo sábado das 08h às 18h e domingo, das 08h às 18h</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-items">
+                                                    <div class="accordion-header">
+                                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta3">POSSO FAZER TODAS AS AULAS?</button>
+                                                    </div>
+                                                    <div id="resposta3" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <p>Com o plano Gold você tem acesso livre a todas as aulas.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-items">
+                                                    <div class="accordion-header">
+                                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta4">SE EU QUISER, POSSO CANCELAR MEU PLANO?</button>
+                                                    </div>
+                                                    <div id="resposta4" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <p>Para cancelar, basta procurar o gerente da sua unidade e solicitar as informações sobre cancelamento..</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-items">
+                                                    <div class="accordion-header">
+                                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta5">TEM PROFESSOR?</button>
+                                                    </div>
+                                                    <div id="resposta5" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <p>Sim, em todas as unidades temos professores que podem ser identificados com a camiseta preta da Usina.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-items">
+                                                    <div class="accordion-header">
+                                                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta6">NÃO ENCONTROU SUA RESPOSTA?</button>
+                                                    </div>
+                                                    <div id="resposta6" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <p>consulte nosso email fitbodyacademia@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <h6 class="titulos">
+                        2023 &copy; <span>FIT</span>-body - Todos os direitos reservados
+                    </h6>
+                </div>
+            </footer>
+        <script src="lib/bootstrap.bundle.min.js"></script>
+        
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

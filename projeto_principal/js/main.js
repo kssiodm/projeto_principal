@@ -44,34 +44,54 @@ $(document).ready(function(){
         $("#formulario").submit();
     });
 
-    // validação da matricula e do contato
+    //validação da matricula e do contato
 
-    $("#submit_button1").click(function() {
-        var nome1 = $("#nome1").val();
-        var email1 = $("#email1").val();
-        var num1 =$('#telefone1').val()
-
-        if (nome1 === "" || email1 === "" || num1 == "") {
-        alert("Por favor, preencha todos os campos!");
-        return false;
-        }
-
-        alert("Formulário enviado com sucesso!");
-        $("#formulario").submit();
+    $(document).ready(function() {
+        $("#submit_button1").click(function() {
+            var nome1 = $("#nome1").val();
+            var email1 = $("#email1").val();
+            var num1 = $('#telefone1').val();
+    
+            var regex = /\S+@\S+\.\S+/;
+    
+            if (nome1 === "" || email1 === "" || num1 === "") {
+                $("#validationAlert").show();
+                return false;
+            }
+    
+            if (!regex.test(email1)) {
+                $("#validationAlert").show();
+                return false;
+            }
+    
+            $("#validationAlert").hide();
+            $("#form").submit(); 
+    
+            $('#matricular').modal('hide');
+        });
     });
 
     $("#submit_button2").click(function() {
         var nome2 = $("#nome2").val();
         var email2 = $("#email2").val();
-
+    
+        // Expressão regular para validar o formato do e-mail
+        var regex = /\S+@\S+\.\S+/;
+    
         if (nome2 === "" || email2 === "") {
-        alert("Por favor, preencha todos os campos!");
-        return false;
+            alert("Por favor, preencha todos os campos!");
+            return false;
         }
-
+    
+        if (!regex.test(email2)) {
+            alert("Por favor, insira um endereço de e-mail válido!");
+            return false;
+        }
+    
         alert("Formulário enviado com sucesso!");
         $("#formulario").submit();
-    })
+    });
+    
 
     // validando nomes dos modais
 
